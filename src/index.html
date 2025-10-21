@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+    <link rel="shortcut icon" type="Imagem/png" sizes=92x92 href="pokebola.png">
+</head>
+
+<body>
+    <div class="container text-center py-4">
+        <h1>Seja bem-vindo à PokéDex</h1>
+        <p>Aqui você encontrará informações sobre diversos Pokémons!</p>
+    </div>
+    <div class="sessao-campo-pesquisa">
+        <input type="text" id="input-pesquisa" placeholder="Nome do Pokémon">
+        <button id="btn-pesquisar">Buscar</button>
+    </div>
+    <div id="pokedex-app">
+        <div id="mensagem-loading" class="hidden">
+            <p>Carregando...</p>
+        </div>
+
+        <div id="pokemon-info" class="hidden">
+            <img id="pokemon-imagem" src="" alt="Imagem do Pokémon">
+            <h2 id="pokemon-nome"></h2>
+            <p id="pokemon-descricao"></p>
+
+            <div class="btns-navegacao hidden">
+                <button id="btn-anterior">Pokémon Anterior</button>
+                <button id="btn-proximo">Próximo Pokémon</button>
+            </div>
+        </div>
+
+        <div id="mensagem-erro" class="hidden">
+            <p>404 NOT FOUND - Pokémon não encontrado!</p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
